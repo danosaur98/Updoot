@@ -48,6 +48,7 @@ body {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.0470588) 0px 4px 4px;
+  margin-bottom: 10px;
 }
 
 .card-img-top {
@@ -56,7 +57,7 @@ body {
   height: 200px;
   width: 200px;
   vertical-align: middle;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 .list-group {

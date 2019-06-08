@@ -23,6 +23,7 @@ export const ANIMALS = [
     superpower: 'Roaring loudly.'
   }]
 
+
 export const TERRITORIES = [
   {
     id: 'forest',
@@ -40,6 +41,36 @@ export const TERRITORIES = [
     superpower: 'Cacti'
   }
 ]
+
+export const RESTAURANTS = [
+  {
+    id: 'mexican',
+    name: 'Mexican',
+    phoneNumber: '202-555-0127',
+    address1: '713 Fordham Dr.',
+    address2: 'Middle Village, NY 11379',
+    rating: 4.5,
+    numReviews: 200,
+  },
+  {
+    id: 'chinese',
+    name: 'Chinese',
+    phoneNumber: '603-555-0150',
+    address1: '8438 West Wellington St.',
+    address2: 'Norcross, GA 30092',
+    rating: 4.2,
+    numReviews: 99
+  },
+  {
+    id: 'italian',
+    name: 'Italian',
+    phoneNumber: '601-555-0139',
+    address1: '8621 Division Avenue',
+    address2: 'Savage, MN 55378',
+    rating: 3.9,
+    numReviews: 42
+  },
+ ]
 
 export const ME_FILENAME = 'me.json'
 export const SUBJECTS_FILENAME = 'subjects.json'
