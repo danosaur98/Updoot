@@ -76,7 +76,7 @@ class SignedIn extends Component {
 
     if(window.location.pathname === '/') {
       return (
-        <Redirect to={`/feed`} />
+        <Redirect to={`/explore`} />
       )
     }
 
@@ -86,7 +86,7 @@ class SignedIn extends Component {
       <NavBar username={username} signOut={this.signOut}/>
       <Switch>
               <Route
-                path='/animals'
+                path='/explore'
                 render={
                   routeProps => <OptionsList
                   type="animals"
@@ -94,7 +94,15 @@ class SignedIn extends Component {
                 }
               />
               <Route
-                path='/territories'
+                path='/business'
+                render={
+                  routeProps => <OptionsList
+                  type="territories"
+                  {...routeProps} />
+                }
+              />
+              <Route
+                path='/review'
                 render={
                   routeProps => <OptionsList
                   type="territories"

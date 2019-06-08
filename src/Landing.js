@@ -19,7 +19,7 @@ class Landing extends Component {
     return (
       <div className="Landing">
         <div className="form-signin">
-          <h1 className="h1 mb-3 font-weight-normal">Animal Kingdom</h1>
+          <h1 className="h1 mb-3 font-weight-normal">Updoot</h1>
           <button
             className="btn btn-lg btn-primary btn-block"
             onClick={this.signIn.bind(this)}>Sign in with Blockstack

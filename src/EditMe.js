@@ -68,7 +68,7 @@ class EditMe extends Component {
         <div className="container row">
           <div className="col-lg-12 done">
             <p>
-              <Link to={`/kingdom/${username}`} className="btn btn-primary" disabled={!completed}>Done</Link>
+              <Link to={`/explore`} className="btn btn-primary" disabled={!completed}>Done</Link>
             </p>
           </div>
         </div>
