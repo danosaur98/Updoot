@@ -1,2 +1,2 @@
 # Updoot
-Personal decentralized news feed with auto TLDR
+Decentralized, crowd-sourced business review forum where users are paid to give reviews
