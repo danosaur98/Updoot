@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './EditMe.css'
-import Card from './Card'
-import { ANIMALS, TERRITORIES } from './constants'
+import Card from '../Card/Card'
+import { ANIMALS, TERRITORIES } from '../../constants'
 
 class EditMe extends Component {
 

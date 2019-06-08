@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { UserSession } from 'blockstack'
-import { appConfig } from './constants'
+import { appConfig } from '../../constants'
 import './Landing.css'
 
 class Landing extends Component {

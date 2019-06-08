@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { UserSession } from 'blockstack'
-import EditMe from './EditMe'
-import Kingdom from './Kingdom'
-import NavBar from './NavBar'
-import OptionsList from './OptionsList'
-import OtherKingdoms from './OtherKingdoms'
-import { appConfig, ME_FILENAME } from './constants'
+import EditMe from '../EditMe/EditMe'
+import NavBar from '../NavBar/NavBar'
+import OptionsList from '../OptionsList/OptionsList'
+import Business from '../Business/Business'
+import Review from '../Review/Review'
+import Explore from '../Explore/Explore'
+import { appConfig, ME_FILENAME } from '../../constants'
 import './SignedIn.css'
 
 
@@ -88,25 +89,19 @@ class SignedIn extends Component {
               <Route
                 path='/explore'
                 render={
-                  routeProps => <OptionsList
-                  type="animals"
-                  {...routeProps} />
+                  routeProps => <Explore/>
                 }
               />
               <Route
                 path='/business'
                 render={
-                  routeProps => <OptionsList
-                  type="territories"
-                  {...routeProps} />
+                  routeProps => <Business/>
                 }
               />
               <Route
                 path='/review'
                 render={
-                  routeProps => <OptionsList
-                  type="territories"
-                  {...routeProps} />
+                  routeProps => <Review/>
                 }
               />
               <Route

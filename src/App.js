@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import './App.css'
 import { UserSession } from 'blockstack'
 
-import Landing from './Landing'
-import SignedIn from './SignedIn'
+import Landing from './components/Landing/Landing'
+import SignedIn from './components/SignedIn/SignedIn'
 
 class App extends Component {
 
