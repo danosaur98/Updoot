@@ -128,7 +128,6 @@ class Review extends Component {
 
     }
     handleChangeCode(event) {
-        console.log(event.target);
         this.setState({
             code: event.target.value,
         });

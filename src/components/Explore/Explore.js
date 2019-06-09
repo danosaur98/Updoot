@@ -7,17 +7,42 @@ import StarRatingComponent from 'react-star-rating-component'
 class Explore extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            search: '',
+        }
+        this.handleChange = this.handleChange.bind(this);
     }
+    handleChange(event) {
+        this.setState({
+            search: event.target.value,
+        });
+    }
+    finishSearch(e) {
+        e.preventDefault();
+    }
+
     render() {
         let options = RESTAURANTS;
         let sponsored = SPONSORED;
         let type = "restaurants"
         return (
             <div className="Explore container">
+                <form onSubmit={this.finishSearch} className="input-group">
+                    <input
+                        className="form-control"
+                        onChange={this.handleChange}
+                        value={this.state.search}
+                        required
+                        placeholder="Search for Businesses"
+                    />
+                    <div className="input-group-append">
+                        <input type="submit" className="btn btn-primary" value="Search" />
+                    </div>
+                </form>
                 <h2>Sponsored</h2>
                 {sponsored.map((option, index) => {
                     return (
-                        <div className="card">
+                        <div className="Business card">
                             <h4 className="card-header">{option.name}</h4>
                             <div class="row">
                                 <div className="col-sm-4">
@@ -49,7 +74,7 @@ class Explore extends Component {
                 <h2>Businesses Near You</h2>
                 {options.map((option, index) => {
                     return (
-                        <div className="card">
+                        <div className="Business card">
                             <h4 className="card-header">{option.name}</h4>
                             <div class="row">
                                 <div className="col-sm-4">

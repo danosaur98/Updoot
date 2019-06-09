@@ -4,6 +4,10 @@
     justify-content: center;
 }
 
+.Business:hover{
+    box-shadow:   rgba(33, 31, 109, 0.5) 0px 8px 8px;
+    transform: scale(1.01);
+}
 .Reviews {
     text-align: left;
 }
