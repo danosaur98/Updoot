@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { RESTAURANTS, SPONSORED } from '../../constants'
 import './Explore.css'
 import BusinessCard from '../BusinessCard/BusinessCard'
+import StarRatingComponent from 'react-star-rating-component'
 
 class Explore extends Component {
     constructor(props) {
@@ -25,7 +26,13 @@ class Explore extends Component {
                                         alt={option.name}
                                     /></div>
                                 <div class="Reviews col-sm-4">
-                                    <h6 className="Reviews-Info">Rating: {option.rating}</h6>
+                                    <h6 className="Reviews-Info"><StarRatingComponent
+                                        name="rate1"
+                                        starCount={5}
+                                        value={option.rating}
+                                        editing={false}
+                                    />
+                                    </h6>
                                     <h6 className="Reviews-Info">Number of Reviews: {option.numReviews}</h6>
                                     <h6 className="Reviews-Info">Cost: {option.cost}</h6>
                                     <h6 className="Reviews-Info">Food Type: {option.foodType}</h6>
@@ -51,7 +58,13 @@ class Explore extends Component {
                                         alt={option.name}
                                     /></div>
                                 <div class="Reviews col-sm-4">
-                                    <h6 className="Reviews-Info">Rating: {option.rating}</h6>
+                                    <h6 className="Reviews-Info"><StarRatingComponent
+                                        name="rate1"
+                                        starCount={5}
+                                        value={option.rating}
+                                        editing={false}
+                                    />
+                                    </h6>
                                     <h6 className="Reviews-Info">Number of Reviews: {option.numReviews}</h6>
                                     <h6 className="Reviews-Info">Cost: {option.cost}</h6>
                                     <h6 className="Reviews-Info">Food Type: {option.foodType}</h6>
