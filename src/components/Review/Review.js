@@ -3,11 +3,11 @@ import { appConfig, ANIMALS, TERRITORIES } from '../../constants'
 import './Review.css'
 import { UserSession } from 'blockstack'
 import StarRatingComponent from 'react-star-rating-component'
+import { API_KEY } from '../../private'
 
 class Review extends Component {
 
     constructor(props) {
-        //TODO: finish verified code logic
         super(props)
         this.state = {
             value: '',
@@ -44,9 +44,24 @@ class Review extends Component {
     finishLike(e) {
         e.preventDefault();
         if (this.state.verified) {
-            this.setState({
-                likeMessage: 'Thanks for sharing! You just earned 300 Satoshi!',
-            });
+            const opennode = require('opennode');
+            opennode.setCredentials(API_KEY, 'dev'); //if no parameter given, default environment is 'live'
+            opennode.createCharge({
+                amount: 0.0227,
+                currency: "USD",
+                auto_settle: true
+            }).then(charge => {
+                this.setState({
+                    likeMessage: 'Thanks for sharing! You just earned 300 Satoshi!',
+                });
+                console.log(charge);
+            })
+                .catch(error => {
+                    this.setState({
+                        likeMessage: 'Error in receiving your payment!',
+                    });
+                    console.error(`${error.status} | ${error.message}`);
+                });
         }
         else {
             this.setState({
@@ -57,10 +72,24 @@ class Review extends Component {
     finishDislike(e) {
         e.preventDefault();
         if (this.state.verified) {
-
-            this.setState({
-                dislikeMessage: 'Thanks for sharing! You just earned 300 Satoshi!',
-            });
+            const opennode = require('opennode');
+            opennode.setCredentials(API_KEY, 'dev'); //if no parameter given, default environment is 'live'
+            opennode.createCharge({
+                amount: 0.0227,
+                currency: "USD",
+                auto_settle: true
+            }).then(charge => {
+                this.setState({
+                    likeMessage: 'Thanks for sharing! You just earned 300 Satoshi!',
+                });
+                console.log(charge);
+            })
+                .catch(error => {
+                    this.setState({
+                        likeMessage: 'Error in sending your payment!',
+                    });
+                    console.error(`${error.status} | ${error.message}`);
+                });
         }
         else {
             this.setState({
@@ -71,10 +100,25 @@ class Review extends Component {
 
     onStarClick(nextValue, prevValue, name) {
         if (this.state.verified) {
-            this.setState({
-                rating: nextValue,
-                ratingMessage: 'Thanks for rating! You just earned 100 Satoshi!'
-            });
+            const opennode = require('opennode');
+            opennode.setCredentials(API_KEY, 'dev'); //if no parameter given, default environment is 'live'
+            opennode.createCharge({
+                amount: 0.01,
+                currency: "USD",
+                auto_settle: true
+            }).then(charge => {
+                this.setState({
+                    rating: nextValue,
+                    ratingMessage: 'Thanks for rating! You just earned 100 Satoshi!'
+                });
+                console.log(charge);
+            })
+                .catch(error => {
+                    this.setState({
+                        likeMessage: 'Error in sending your payment!',
+                    });
+                    console.error(`${error.status} | ${error.message}`);
+                });
         }
         else {
             this.setState({
