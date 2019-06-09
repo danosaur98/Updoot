@@ -42,10 +42,21 @@ export const TERRITORIES = [
   }
 ]
 
+export const SPONSORED = [
+  {
+    id: 'american',
+    name: 'Best Burgers',
+    phoneNumber: '602-555-0116',
+    address1: '62 Chapel Lane',
+    address2: 'Deland, FL 32720',
+    rating: 4.4,
+    numReviews: 12,
+  },
+]
 export const RESTAURANTS = [
   {
     id: 'mexican',
-    name: 'Mexican',
+    name: 'La Mesa',
     phoneNumber: '202-555-0127',
     address1: '713 Fordham Dr.',
     address2: 'Middle Village, NY 11379',
@@ -54,7 +65,7 @@ export const RESTAURANTS = [
   },
   {
     id: 'chinese',
-    name: 'Chinese',
+    name: 'King Wok',
     phoneNumber: '603-555-0150',
     address1: '8438 West Wellington St.',
     address2: 'Norcross, GA 30092',
@@ -63,14 +74,14 @@ export const RESTAURANTS = [
   },
   {
     id: 'italian',
-    name: 'Italian',
+    name: 'The Cal Zone',
     phoneNumber: '601-555-0139',
     address1: '8621 Division Avenue',
     address2: 'Savage, MN 55378',
     rating: 3.9,
     numReviews: 42
   },
- ]
+]
 
 export const ME_FILENAME = 'me.json'
 export const SUBJECTS_FILENAME = 'subjects.json'

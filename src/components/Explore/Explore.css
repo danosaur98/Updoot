@@ -1,9 +1,14 @@
 .Explore {
     text-align: center;
-    position:relative;
+    align-items: center;
+    justify-content: center
 }
-.Review {
-    position: absolute;
-    bottom: 0;
-    margin-top: 5px;
+
+.Reviews {
+    text-align: left;
+}
+
+.Contact {
+    text-align: right;
+    padding-right: 80px;
 }
