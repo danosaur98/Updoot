@@ -1,14 +1,21 @@
 .Explore {
     text-align: center;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .Reviews {
     text-align: left;
 }
 
+.Reviews-Info {
+    padding-top: 20px;
+}
+
 .Contact {
     text-align: right;
     padding-right: 80px;
+}
+.Contact-Info {
+    padding-top: 20px;
 }

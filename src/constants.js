@@ -41,7 +41,6 @@ export const TERRITORIES = [
     superpower: 'Cacti'
   }
 ]
-
 export const SPONSORED = [
   {
     id: 'american',
@@ -51,6 +50,8 @@ export const SPONSORED = [
     address2: 'Deland, FL 32720',
     rating: 4.4,
     numReviews: 12,
+    foodType: 'American',
+    cost: '$'
   },
 ]
 export const RESTAURANTS = [
@@ -62,6 +63,8 @@ export const RESTAURANTS = [
     address2: 'Middle Village, NY 11379',
     rating: 4.5,
     numReviews: 200,
+    foodType: 'Mexican',
+    cost: '$'
   },
   {
     id: 'chinese',
@@ -70,7 +73,9 @@ export const RESTAURANTS = [
     address1: '8438 West Wellington St.',
     address2: 'Norcross, GA 30092',
     rating: 4.2,
-    numReviews: 99
+    numReviews: 99,
+    foodType: 'Chinese',
+    cost: '$$'
   },
   {
     id: 'italian',
@@ -79,7 +84,9 @@ export const RESTAURANTS = [
     address1: '8621 Division Avenue',
     address2: 'Savage, MN 55378',
     rating: 3.9,
-    numReviews: 42
+    numReviews: 42,
+    foodType: 'Italian',
+    cost: '$$$'
   },
 ]
 

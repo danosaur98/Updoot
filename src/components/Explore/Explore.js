@@ -24,18 +24,18 @@ class Explore extends Component {
                                         src={`/${type}/${option.id}.jpg`}
                                         alt={option.name}
                                     /></div>
-                                <div class="col-sm-4">
-                                    <h6 className="Reviews">Rating: {option.rating}</h6>
-                                    <h6 className="Reviews">Number of Reviews: {option.numReviews}</h6>
+                                <div class="Reviews col-sm-4">
+                                    <h6 className="Reviews-Info">Rating: {option.rating}</h6>
+                                    <h6 className="Reviews-Info">Number of Reviews: {option.numReviews}</h6>
+                                    <h6 className="Reviews-Info">Cost: {option.cost}</h6>
+                                    <h6 className="Reviews-Info">Food Type: {option.foodType}</h6>
                                 </div>
-                                <div class="col-sm-4">
-                                    <h6 className="Contact">{option.phoneNumber}</h6>
-                                    <h6 className="Contact">{option.address1}</h6>
-                                    <h6 className="Contact">{option.address2}</h6>
-
+                                <div class="Contact col-sm-4">
+                                    <h6 className="Contact-Info">{option.phoneNumber}</h6>
+                                    <h6 className="Contact-Info">{option.address1}</h6>
+                                    <h6 className="Contact-Info">{option.address2}</h6>
                                 </div>
                             </div>
-
                         </div>
                     )
                 })}
@@ -50,14 +50,16 @@ class Explore extends Component {
                                         src={`/${type}/${option.id}.jpg`}
                                         alt={option.name}
                                     /></div>
-                                <div class="col-sm-4">
-                                    <h6 className="Reviews">Rating: {option.rating}</h6>
-                                    <h6 className="Reviews">Number of Reviews: {option.numReviews}</h6>
+                                <div class="Reviews col-sm-4">
+                                    <h6 className="Reviews-Info">Rating: {option.rating}</h6>
+                                    <h6 className="Reviews-Info">Number of Reviews: {option.numReviews}</h6>
+                                    <h6 className="Reviews-Info">Cost: {option.cost}</h6>
+                                    <h6 className="Reviews-Info">Food Type: {option.foodType}</h6>
                                 </div>
-                                <div class="col-sm-4">
-                                    <h6 className="Contact">{option.phoneNumber}</h6>
-                                    <h6 className="Contact">{option.address1}</h6>
-                                    <h6 className="Contact">{option.address2}</h6>
+                                <div class="Contact col-sm-4">
+                                    <h6 className="Contact-Info">{option.phoneNumber}</h6>
+                                    <h6 className="Contact-Info">{option.address1}</h6>
+                                    <h6 className="Contact-Info">{option.address2}</h6>
 
                                 </div>
                             </div>
