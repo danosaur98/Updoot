@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import { UserSession } from 'blockstack'
 import EditMe from '../EditMe/EditMe'
 import NavBar from '../NavBar/NavBar'
-import OptionsList from '../OptionsList/OptionsList'
 import Business from '../Business/Business'
 import Review from '../Review/Review'
 import Explore from '../Explore/Explore'
@@ -67,7 +66,6 @@ class SignedIn extends Component {
     const me = this.state.me
     const redirectToMe = this.state.redirectToMe
     if(redirectToMe) {
-      // User hasn't configured her animal
       if(window.location.pathname !== '/me') {
         return (
           <Redirect to="/me" />
