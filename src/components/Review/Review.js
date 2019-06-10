@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { appConfig, ANIMALS, TERRITORIES } from '../../constants'
+import { appConfig} from '../../constants'
 import './Review.css'
 import { UserSession } from 'blockstack'
 import StarRatingComponent from 'react-star-rating-component'

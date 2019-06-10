@@ -41,7 +41,9 @@ class Explore extends Component {
                         <input type="submit" className="btn btn-primary" value="Submit" />
                     </div>
                 </form>
+                <br />
                 <h2>Sponsored</h2>
+                <br />
                 {sponsored.map((option, index) => {
                     return (
                         <div className="Business card"
@@ -87,14 +89,16 @@ class Explore extends Component {
                                     />
                                     <h6 className='collapse-info'> What I liked: Service was amazing!</h6>
                                     <h6 className='collapse-info'> What I disliked: Waiting time was a little long.</h6>
-                                    <h6 className = 'helpful'> <font color="blue"> Helpful. Not helpful.</font></h6>
+                                    <h6 className='helpful'> <font color="blue"> Helpful. Not helpful.</font></h6>
                                 </div>
                             </Collapse>
                         </div>
 
                     )
                 })}
+                <br />
                 <h2>Businesses Near You</h2>
+                <br />
                 {options.map((option, index) => {
                     return (
                         <div className="Business card">

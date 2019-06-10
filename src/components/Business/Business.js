@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { ANIMALS, TERRITORIES } from '../../constants'
 import './Business.css'
 
 class Business extends Component {
