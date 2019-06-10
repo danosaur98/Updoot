@@ -38,7 +38,7 @@ class Review extends Component {
         e.preventDefault();
         this.setState({
             verified: true,
-            codeMessage: 'Verified! Submit your review for Best Burgeres below.'
+            codeMessage: 'Verified! Submit your review for Best Burgers below.'
         });
     }
     finishLike(e) {
