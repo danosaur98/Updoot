@@ -25,7 +25,7 @@ body {
 }
 
 .card {
-  height: 300px;
+  min-height: 300px;
   border-top-width: 1px;
   border-right-width: 1px;
   border-bottom-width: 1px;
@@ -57,7 +57,8 @@ body {
   height: 200px;
   width: 200px;
   vertical-align: middle;
-  margin-top: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .list-group {

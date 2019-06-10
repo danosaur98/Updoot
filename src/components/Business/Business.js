@@ -8,7 +8,7 @@ class Business extends Component {
         return (
             <div className="Business container">
                 <h1>
-                    Hey I'm a business
+                    Business Configuration Page
                 </h1>
             </div>
         );

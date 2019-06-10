@@ -38,7 +38,7 @@ class Review extends Component {
         e.preventDefault();
         this.setState({
             verified: true,
-            codeMessage: 'Verified! Submit your review for La Mesa below.'
+            codeMessage: 'Verified! Submit your review for Best Burgeres below.'
         });
     }
     finishLike(e) {
