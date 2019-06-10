@@ -67,10 +67,9 @@ class SignedIn extends Component {
     const me = this.state.me
     const redirectToMe = this.state.redirectToMe
     if(redirectToMe) {
-      // User hasn't configured her animal
-      if(window.location.pathname !== '/me') {
+      if(window.location.pathname !== '/explore') {
         return (
-          <Redirect to="/me" />
+          <Redirect to="/explore" />
         )
       }
     }
