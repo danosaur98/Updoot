@@ -65,13 +65,13 @@ class SignedIn extends Component {
     const username = this.userSession.loadUserData().username
     const me = this.state.me
     const redirectToMe = this.state.redirectToMe
-    if(redirectToMe) {
-      if(window.location.pathname !== '/explore') {
-        return (
-          <Redirect to="/explore" />
-        )
-      }
-    }
+    // if(redirectToMe) {
+    //   if(window.location.pathname !== '/explore') {
+    //     return (
+    //       <Redirect to="/explore" />
+    //     )
+    //   }
+    // }
 
     if(window.location.pathname === '/') {
       return (
