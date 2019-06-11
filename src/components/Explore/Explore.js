@@ -84,7 +84,7 @@ class Explore extends Component {
                                         className='collapse-info'
                                         name="rate1"
                                         starCount={5}
-                                        value={5}
+                                        value={4}
                                         editing={false}
                                     />
                                     <h6 className='collapse-info'> What I liked: Service was amazing!</h6>

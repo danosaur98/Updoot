@@ -80,13 +80,13 @@ class Review extends Component {
                 auto_settle: true
             }).then(charge => {
                 this.setState({
-                    likeMessage: 'Thanks for sharing! You just earned 300 Satoshi!',
+                    dislikeMessage: 'Thanks for sharing! You just earned 300 Satoshi!',
                 });
                 console.log(charge);
             })
                 .catch(error => {
                     this.setState({
-                        likeMessage: 'Error in sending your payment!',
+                        dislikeMessage: 'Error in sending your payment!',
                     });
                     console.error(`${error.status} | ${error.message}`);
                 });
