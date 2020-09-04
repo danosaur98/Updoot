@@ -27,7 +27,7 @@
     "eslint-plugin-react": "^7.12.4",
     "file-loader": "^3.0.1",
     "fs-extra": "^7.0.1",
-    "handlebars": ">=4.0.14",
+    "handlebars": ">=4.5.3",
     "html-webpack-plugin": "^4.0.0-beta.5",
     "install-peers": "^1.0.3",
     "jest": "^23.6.0",
